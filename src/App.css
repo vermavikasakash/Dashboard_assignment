@@ -1,0 +1,80 @@
+.app {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #23272a;
+  color: white;
+}
+
+.table {
+  background-color: #2c2f33;
+}
+
+.list-unstyled {
+  padding: 0;
+}
+
+.list-unstyled li {
+  /* background-color: #3a3f44; */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.list-unstyled .home_icon {
+  color: #0dcaf0;
+}
+
+/* ! PROGRESS BAR */
+.progress-circle {
+  position: relative;
+  width: 115px;
+  height: 115px;
+  background-color: #4c4f54;
+  border-radius: 50%;
+}
+
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #7289da;
+  clip-path: polygon(-100% 0%, 100% 0, 100% 100%, 50% 70%);
+  transform: rotate(126deg);
+}
+
+.inside-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #2c2f33;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 576px) {
+  .list-unstyled li {
+    /* margin: 5px 0; */
+    /* padding: 10px; */
+    border-radius: 5px;
+  }
+  .list-unstyled .home_icon {
+    padding: 0 !important;
+  }
+  .list-unstyled .home_icon_2 {
+    padding: 0 !important;
+  }
+}

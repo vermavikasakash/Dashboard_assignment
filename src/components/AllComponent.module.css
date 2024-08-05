@@ -1,0 +1,231 @@
+/* //? STYLE FOR HEADER */
+.header_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #2c2f33;
+  height: 65px;
+  padding: 1rem;
+}
+.search_div {
+  display: flex;
+  align-items: center;
+}
+.search_icon {
+  position: absolute;
+  z-index: 2;
+  font-size: 22px;
+  padding-left: 1rem;
+  pointer-events: none;
+  color: white;
+}
+.search_input {
+  width: 100%;
+  color: white !important;
+  background: #3a3f44;
+  padding-left: 3rem;
+  border-radius: 10px;
+  border: none;
+  height: 36px;
+}
+.icon_background {
+  background-color: #3a3f44;
+  border-radius: 50%;
+  height: 36px;
+  width: 30px;
+  padding-right: 3px;
+  padding-left: 3px;
+  margin-right: 12px;
+}
+
+/* //? DESIGN FOR HOME PAGE */
+.dashboard {
+  background: black;
+  padding: 1rem;
+}
+.goal_card {
+  /* text-align: center; */
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background: #3a3f44;
+}
+.profit_card {
+  border-radius: 5px;
+  padding: 15px 10px;
+  color: white;
+  background: #3a3f44;
+  display: flex;
+  justify-content: space-between;
+}
+.circle_and_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.number_icon_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading {
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+.profit_percent1 {
+  color: palevioletred;
+}
+.profit_percent2 {
+  color: aqua;
+}
+.circle_text {
+  font-size: 11px;
+  color: #b0b3b8;
+  margin: 0;
+}
+.profit_price {
+  font-size: 38px;
+  line-height: 60px;
+}
+/* ! style for goal section */
+.icons_text_div {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  /* justify-content: space-between; */
+}
+.icons_backGround {
+  color: orangered;
+  background-color: cornflowerblue;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.text_symbol {
+  display: flex;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  align-items: center;
+}
+
+/* ! activity */
+.goal_card_new {
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  background: #3a3f44;
+}
+/* ! ORDERS */
+.profileImg {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.table_row {
+  height: 50px !important;
+}
+.fb_comment {
+  font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid;
+}
+/* ! sidebar */
+.sidebar {
+  /* width: 65px; */
+  /* height: 100vh; */
+  color: #fff;
+  background-color: #2c2f33;
+}
+.menu_grid {
+  width: 51px;
+  height: 51px;
+  color: #0dcaf0;
+}
+.whole_page {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.dash_text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* ! MEDIA QUERY STARTS */
+@media screen and (max-width: 1200px) {
+  .profit_price {
+    font-size: 25px;
+  }
+  .goal_card_ {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .profit_price {
+    font-size: 18px;
+  }
+  .heading {
+    font-size: 15px;
+  }
+  .profit_card {
+    padding: 10px 5px;
+  }
+  .icons_text_div {
+    margin-bottom: 10px;
+  }
+  .goal_card_new {
+    padding: 5px 10px;
+  }
+  .icons_backGround {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profit_card {
+    margin-top: 20px;
+  }
+  /* .goal_card_new {
+    margin-top: 20px;
+  } */
+  .goal_card {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .goal_card {
+    width: auto;
+  }
+  .profit_card {
+    width: auto;
+  }
+  .goal_card_new {
+    width: auto;
+  }
+  .sidebar {
+    width: 35px;
+  }
+  .menu_grid {
+    width: 20px;
+  }
+  .header_div {
+    justify-content: center;
+    height: 100px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .table_row {
+    font-size: 14px;
+  }
+  .dash_text {
+    font-size: 20px;
+  }
+}
