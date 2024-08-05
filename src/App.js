@@ -11,7 +11,7 @@ function App() {
   return (
     <Row className="app">
       <Col xs={1} className={styles.sidebar}>
-        {" "}
+        
         <LeftBar />
       </Col>
       <Col xs={11} className={styles.whole_page}>
