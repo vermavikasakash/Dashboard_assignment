@@ -81,7 +81,7 @@ const Dashboard = () => {
             </div>
             {/* // progress */}
             <div className={styles.circle_and_text}>
-              <div class="progress-circle">
+              <div className={styles.progress_circle}>
                 <div class="circle">
                   <div class="mask full">
                     <div class="fill"></div>
@@ -91,7 +91,7 @@ const Dashboard = () => {
                     <div class="fill fix"></div>
                   </div>
                 </div>
-                <div class="inside-circle">
+                <div className={styles.inside_circle}>
                   70%
                   <p className={styles.circle_text}>Goal Completed</p>
                 </div>
