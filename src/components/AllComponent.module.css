@@ -211,6 +211,9 @@
   .goal_card_ {
     padding: 5px;
   }
+  .chart_width{
+    width: auto !important;
+  }
 }
 @media screen and (max-width: 992px) {
   .profit_price {
@@ -243,6 +246,9 @@
   .goal_card {
     margin-bottom: 20px;
   }
+  .chart_width{
+    height: auto !important;
+  }
 }
 @media screen and (max-width: 576px) {
   .goal_card {
@@ -272,4 +278,5 @@
   .dash_text {
     font-size: 20px;
   }
+  
 }
